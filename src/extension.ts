@@ -16,17 +16,18 @@ export function activate(context: vscode.ExtensionContext) {
         return;
       }
 
-      let filePath = fileURLToPath(fileUri.toString()),
-        isWin = process.platform === "win32";
+      const filePath = fileURLToPath(fileUri.toString());
+      const isWindows = process.platform === "win32";
 
       terminal =
         terminal ||
-        vscode.window.createTerminal(
-          "exe Runner",
-          isWin ? "C:\\Windows\\System32\\cmd.exe" : undefined
-        );
+        vscode.window.createTerminal({
+          name: "exe Runner",
+          shellPath: isWindows ? "C:\\Windows\\System32\\cmd.exe" : "/bin/bash",
+          shellArgs: isWindows ? [] : ["-c"],
+        });
       terminal.show();
-      terminal.sendText(`${isWin ? "" : "wine "}"${filePath}"`);
+      terminal.sendText(`${isWindows ? "" : "wine "}"${filePath}"`);
 
       vscode.window.onDidCloseTerminal((closedTerminal) => {
         if (closedTerminal === terminal) {

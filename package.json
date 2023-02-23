@@ -1,9 +1,10 @@
 {
   "name": "run-exe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.14.0"
   },
+  "icon": "images/icon.png",
   "activationEvents": [
     "run-exe.run"
   ],
@@ -24,7 +25,8 @@
     "exe",
     "executable"
   ],
-  "author": "Harry-Hopkinson",
+  "author": "HarryHopkinson",
+  "publisher": "HarryHopkinson",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Harry-Hopkinson/run-exe/issues"
@@ -43,8 +45,8 @@
         "command": "run-exe.run",
         "title": "Run Executable",
         "icon": {
-          "light": "media/light.svg",
-          "dark": "media/dark.svg"
+          "light": "images/light.svg",
+          "dark": "images/dark.svg"
         }
       }
     ],

@@ -1,0 +1,24 @@
+name: Linter ✏️
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14, 15, 16]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Yarn 🧶
+        run: |
+          npm install --save-dev prettier
+      - name: Typescript Linting ✏️
+        run: |
+          npm run lint

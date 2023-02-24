@@ -1,3 +1,7 @@
+<p align="center">
+  <img alt="Icon" src="images/icon.png" width=200 height=200>
+</p>
+
 <h2 align="center">Run Exe</h2>
 
 <p align="center">

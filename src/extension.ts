@@ -8,7 +8,6 @@ export function activate(context: vscode.ExtensionContext) {
     vscode.commands.registerCommand("run-exe.run", (fileUri: vscode.Uri) => {
       fileUri = fileUri || vscode.window.activeTextEditor?.document.uri;
 
-      // Handle remote editors
       if (!fileUri || fileUri.scheme !== "file") {
         vscode.window.showErrorMessage(
           "Selected file is an invalid local file."

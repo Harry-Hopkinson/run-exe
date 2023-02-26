@@ -10,7 +10,7 @@ export function activate(context: vscode.ExtensionContext) {
 
       if (!fileUri || fileUri.scheme !== "file") {
         vscode.window.showErrorMessage(
-          "Selected file is an invalid local file."
+          "Selected file is not an Executable."
         );
         return;
       }

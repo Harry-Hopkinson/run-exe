@@ -16,7 +16,7 @@
     <img alt="Rating " src="https://img.shields.io/visual-studio-marketplace/r/HarryHopkinson.run-exe">
   </a>
   <a>
-    <img alt="Github Actions Build Status" src="https://img.shields.io/github/actions/workflow/status/Harry-Hopkinson/run-exe/Compiler.yml?label=Lint&style=flat-square">
+    <img alt="Github Actions Build Status" src="https://img.shields.io/github/actions/workflow/status/Harry-Hopkinson/run-exe/Compiler.yml?label=Compiler&style=flat-square">
   </a>
   <a>
     <img alt="Github Actions Linter Status" src="https://img.shields.io/github/actions/workflow/status/Harry-Hopkinson/run-exe/Linter.yml?label=Lint&style=flat-square">

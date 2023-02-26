@@ -9,9 +9,7 @@ export function activate(context: vscode.ExtensionContext) {
       fileUri = fileUri || vscode.window.activeTextEditor?.document.uri;
 
       if (!fileUri || fileUri.scheme !== "file") {
-        vscode.window.showErrorMessage(
-          "Selected file is not an Executable."
-        );
+        vscode.window.showErrorMessage("Selected file is not an Executable.");
         return;
       }
 

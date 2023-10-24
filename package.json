@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/Harry-Hopkinson/run-exe#readme",
   "devDependencies": {
-    "@types/node": "^18.14.2",
+    "@types/node": "^20.0.0",
     "@types/vscode": "^1.14.0",
     "prettier": "^2.8.4",
     "typescript": "^5.0.0",

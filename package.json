@@ -2,7 +2,7 @@
   "name": "run-exe",
   "version": "1.0.3",
   "engines": {
-    "vscode": "^1.14.0"
+    "vscode": "^2023.0.0"
   },
   "icon": "images/icon.png",
   "activationEvents": [

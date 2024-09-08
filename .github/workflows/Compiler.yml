@@ -16,9 +16,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
-      - name: NPM
+      - name: Yarn
         run: |
-          npm install
+          yarn
       - name: Compile
         run: |
-          npm run compile
+          yarn compile

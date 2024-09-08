@@ -1,0 +1,16 @@
+.github
+node_modules
+renovate.json
+.vscode
+.prettierrc.js
+yarn.lock
+package.json
+.gitignore
+.gitpod.yml
+images/example.gif
+versions
+src
+README.md
+LICENSE.txt
+.prettierignore
+tsconfig.json
